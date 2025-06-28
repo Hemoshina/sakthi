@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heart Disease Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict" method="post">
+      <input type="number" name="age" placeholder="Age" required>
+      <input type="number" name="sex" placeholder="Sex (1=Male, 0=Female)" required>
+      <input type="number" name="cp" placeholder="Chest Pain Type (0-3)" required>
+      <input type="number" name="trestbps" placeholder="Resting BP" required>
+      <input type="number" name="chol" placeholder="Cholesterol" required>
+      <input type="number" name="fbs" placeholder="Fasting Blood Sugar (1/0)" required>
+      <input type="number" name="restecg" placeholder="Resting ECG (0-2)" required>
+      <input type="number" name="thalach" placeholder="Max Heart Rate" required>
+      <input type="number" name="exang" placeholder="Exercise Angina (1/0)" required>
+      <input type="number" name="oldpeak" step="any" placeholder="Oldpeak" required>
+      <input type="number" name="slope" placeholder="Slope (0-2)" required>
+      <input type="number" name="ca" placeholder="Number of vessels (0-3)" required>
+      <input type="number" name="thal" placeholder="Thal (1=Normal, 2=Fixed, 3=Reversible)" required>
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>
